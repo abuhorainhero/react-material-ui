@@ -1,13 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Comment.css'
+import imagesInfo from '../../FackData/index';
+import Image from '../Image/Image';
 
 const Comments = (props) => {
-    const {name, email, body,postId} = props.comment;
+    const [image, setImage] = useState(imagesInfo);
+    const {name, email, body, id, postId} = props.comment;
 
     return (
         <div className='comment-container'>
             <div className='img-container'>
-                <h1>hi {postId}</h1>
+                <Image id={id} image={image}></Image>
             </div>
             <div className='text-container'>
                 <h4>Name : {name}</h4>
