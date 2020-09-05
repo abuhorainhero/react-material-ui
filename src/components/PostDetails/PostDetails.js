@@ -20,7 +20,7 @@ const PostDetails = () => {
     },[])
     return (
         <div>
-            <div style={{marginLeft:"20px"}}>
+            <div className="box" style={{padding:"5px", marginLeft:"20px"}}>
                 <p><strong>Post No : {post.id}</strong></p>
                 <h3>Post Title : {post.title}</h3>
                 <p><b>Caption :</b> {post.body}</p>

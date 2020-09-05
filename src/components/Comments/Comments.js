@@ -8,7 +8,7 @@ const Comments = (props) => {
     const {name, email, body, id, postId} = props.comment;
 
     return (
-        <div className='comment-container'>
+        <div className='comment-container box-comment'>
             <div className='img-container'>
                 <Image id={id} image={image}></Image>
             </div>

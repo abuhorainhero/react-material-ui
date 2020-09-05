@@ -12,12 +12,12 @@ const Post = (props) => {
     }
 
     return (
-        <Container fixed style={postStyle}>
+        <Container fixed style={postStyle} className="box">
             <p><strong>Post No : {id}</strong></p>
             <h3>Post Title : {title}</h3>
             <p><b>Caption :</b> {body}</p>
             <Link to={`/${id}`} >
-                <button>see more</button>
+                <button className="main-btn">see more</button>
             </Link>
         </Container>
     );

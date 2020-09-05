@@ -12,6 +12,7 @@ import NotFound from './components/NotFound/NotFound';
 
 function App() {
   return (
+    <div className="boby">
     <Router>
       <Switch>
         <Route path="/home">
@@ -31,6 +32,7 @@ function App() {
         </Route>
       </Switch>
     </Router>
+    </div>
   );
 }
 
