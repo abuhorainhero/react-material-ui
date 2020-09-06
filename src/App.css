@@ -7,7 +7,9 @@
 }
 .box {
     background-color: rgb(99, 221, 119);
+    border-radius: 10px;
 }
 .box-comment{
     background-color:lightblue;
+    border-radius: 10px;
 }

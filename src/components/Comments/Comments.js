@@ -12,7 +12,7 @@ const Comments = (props) => {
             <div className='text-container'>
                 <h6>{email}</h6>
                 <h4>{name}</h4>
-                <p><b>Caption :</b> {body}</p>
+                <p>{body}</p>
             </div>
         </div>
     );
