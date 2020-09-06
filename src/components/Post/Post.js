@@ -13,12 +13,16 @@ const Post = (props) => {
 
     return (
         <Container fixed style={postStyle} className="box">
-            <p><strong>Post No : {id}</strong></p>
+            <div>
+                <img src={`https://randomuser.me/api/portraits/med/men/${id}.jpg`} alt=""/>
+            </div>
+            <div>
             <h3>Post Title : {title}</h3>
             <p><b>Caption :</b> {body}</p>
             <Link to={`/${id}`} >
                 <button className="main-btn">see more</button>
             </Link>
+            </div>
         </Container>
     );
 };

@@ -25,7 +25,7 @@ const PostDetails = () => {
                 <h3>Post Title : {post.title}</h3>
                 <p><b>Caption :</b> {post.body}</p>
             </div>
-            <h4><u>Comments :</u></h4>
+            <h3>Comments : {comments.length}</h3>
             {
                 comments.map(cmt => <Comments  key={cmt.id} comment={cmt}></Comments>)
             }
